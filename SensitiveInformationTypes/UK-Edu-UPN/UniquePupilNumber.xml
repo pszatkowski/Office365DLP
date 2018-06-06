@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePack id="a0c01850-97ec-4835-b0fc-6b1061dfc670">
+	<Version build="0" major="1" minor="0" revision="0"/>
+	<Publisher id="2618e0d1-7876-4ff6-8cc0-c46f2fb57877"/>
+	<Details defaultLangCode="en-gb">
+		<LocalizedDetails langcode="en-gb">
+			<PublisherName>Hurst Technology Solutions</PublisherName>
+			<Name>UK school UPN rule pack</Name>
+			<Description>
+			This rule package contains rules to detect a UK unique pupil number.
+			</Description>
+		</LocalizedDetails>
+	</Details>
+</RulePack>
+
+<Rules>
+<!-- UPN -->
+<Entity id="8ded5897-6423-49d9-b846-90df6317d05a" recommendedConfidence="80">
+		<Pattern confidenceLevel="80">
+			<IdMatch idRef="Regex_UPN"/>
+		</Pattern>
+	</Entity>
+	<Regex id="Regex_UPN">([^IOS\s]\d{12})</Regex>
+</Rules>
+</RulePackage>
