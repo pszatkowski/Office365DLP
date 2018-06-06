@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="a0c01850-97ec-4835-b0fc-6b1061dfc670">
 	<Version build="0" major="1" minor="0" revision="0"/>
@@ -16,11 +16,19 @@
 
 <Rules>
 <!-- UPN -->
-<Entity id="8ded5897-6423-49d9-b846-90df6317d05a" recommendedConfidence="80">
+<Entity id="8ded5897-6423-49d9-b846-90df6317d05a" patternsProximity="100" recommendedConfidence="80">
 		<Pattern confidenceLevel="80">
 			<IdMatch idRef="Regex_UPN"/>
 		</Pattern>
-	</Entity>
-	<Regex id="Regex_UPN">([^IOS\s]\d{12})</Regex>
+</Entity>
+<Regex id="Regex_UPN">([^IOS\s]\d{12})</Regex>
+<LocalizedStrings>
+		<Resource idRef="8ded5897-6423-49d9-b846-90df6317d05a">
+			<Name default="true" langcode="en-gb">UK school UPN</Name>
+			<Description default="true" langcode="en-gb">
+			A custom classification for detecting UK school Unique Pupil Numbers
+			</Description>
+		</Resource>
+	</LocalizedStrings>
 </Rules>
 </RulePackage>
