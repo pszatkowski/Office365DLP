@@ -24,9 +24,9 @@
 <Regex id="Regex_UPN">([^IOS\s]\d{12})</Regex>
 <LocalizedStrings>
 		<Resource idRef="8ded5897-6423-49d9-b846-90df6317d05a">
-			<Name default="true" langcode="en-gb">UK school UPN</Name>
+			<Name default="true" langcode="en-gb">UK School UPN</Name>
 			<Description default="true" langcode="en-gb">
-			A custom classification for detecting UK school Unique Pupil Numbers
+			A custom classification for detecting UK School Unique Pupil Numbers
 			</Description>
 		</Resource>
 	</LocalizedStrings>
