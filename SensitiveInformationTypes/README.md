@@ -1,0 +1,2 @@
+# Sensitive Information Types
+## Installation
